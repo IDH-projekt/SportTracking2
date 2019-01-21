@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="1/21/2019 6:18:52 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="SE00002797"
+  DTS:CreatorName="SCANIA_PL\sfp_munikk"
+  DTS:DTSID="{F7D18A55-890D-42B2-B8B7-460443364EC9}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="13.0.1601.5"
+  DTS:LocaleID="1045"
+  DTS:ObjectName="Package"
+  DTS:PackageType="5"
+  DTS:VersionGUID="{5E45DA77-6F5F-42DF-A31F-656FA32F485C}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:Variables />
+  <DTS:Executables />
+</DTS:Executable>
