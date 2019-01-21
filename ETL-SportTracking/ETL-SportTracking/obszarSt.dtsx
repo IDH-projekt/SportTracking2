@@ -1,18 +1,18 @@
-<?xml version="1.0"?>
+﻿<?xml version="1.0"?>
 <DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:refId="Package"
   DTS:CreationDate="1/21/2019 6:18:52 PM"
   DTS:CreationName="Microsoft.Package"
   DTS:CreatorComputerName="SE00002797"
   DTS:CreatorName="SCANIA_PL\sfp_munikk"
-  DTS:DTSID="{F7D18A55-890D-42B2-B8B7-460443364EC9}"
+  DTS:DTSID="{5E2D745F-4321-44D1-8BBF-919DDD0CA80D}"
   DTS:ExecutableType="Microsoft.Package"
   DTS:LastModifiedProductVersion="13.0.1601.5"
   DTS:LocaleID="1045"
-  DTS:ObjectName="Package"
+  DTS:ObjectName="obszarSt"
   DTS:PackageType="5"
-  DTS:VersionBuild="4"
-  DTS:VersionGUID="{E733E973-41DE-4B7F-96B3-15B3E015C2B6}">
+  DTS:VersionBuild="6"
+  DTS:VersionGUID="{4DD181CF-1E54-4827-8605-22628B8879B5}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -358,25 +358,25 @@
         <NodeLayout
           Size="165,42"
           Id="Package\Execute SQL Task"
-          TopLeft="272,133" />
+          TopLeft="267,129" />
         <NodeLayout
           Size="153,42"
           Id="Package\Data Flow Task"
-          TopLeft="279,277" />
+          TopLeft="276,240" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="355,175">
+          TopLeft="351,171">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,102"
+              EndConnector="0,69"
               Start="0,0"
-              End="0,94.5">
+              End="0,61.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,94.5" />
+                    End="0,61.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>

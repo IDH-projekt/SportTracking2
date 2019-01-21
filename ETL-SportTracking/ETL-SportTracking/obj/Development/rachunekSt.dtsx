@@ -1,25 +1,25 @@
-﻿<?xml version="1.0"?>
+<?xml version="1.0"?>
 <DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:refId="Package"
   DTS:CreationDate="10/27/2018 12:37:22 PM"
   DTS:CreationName="Microsoft.Package"
   DTS:CreatorComputerName="LAB130-15"
   DTS:CreatorName="PJWSTK\s10681"
-  DTS:DTSID="{5370255C-73A7-4695-93B3-49761E19DE75}"
+  DTS:DTSID="{0639F239-284B-413C-B2A8-DCBE17A07501}"
   DTS:ExecutableType="Microsoft.Package"
   DTS:LastModifiedProductVersion="13.0.1601.5"
   DTS:LocaleID="1045"
   DTS:ObjectName="rachunekSt"
   DTS:PackageType="5"
-  DTS:VersionBuild="7"
-  DTS:VersionGUID="{6C1FA4C2-59E8-4720-BE0A-F9D4061D2406}">
+  DTS:VersionBuild="6"
+  DTS:VersionGUID="{6E799A25-AD92-4405-B311-00E632C46990}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[db-mssql.NaszBankTransakcyjna]"
       DTS:CreationName="OLEDB"
-      DTS:DTSID="{34F665A1-FBFA-46BD-9431-A066D1CAF30E}"
+      DTS:DTSID="{D4D8C55F-8FAE-44C3-B9FA-5ACEAC07385C}"
       DTS:ObjectName="db-mssql.NaszBankTransakcyjna">
       <DTS:ObjectData>
         <DTS:ConnectionManager
@@ -29,7 +29,7 @@
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[db-mssql.S10681]"
       DTS:CreationName="OLEDB"
-      DTS:DTSID="{AD4AF427-655B-4890-8F2E-07F970EB8FAA}"
+      DTS:DTSID="{F352521D-FA35-402B-A7DD-FD77903559BD}"
       DTS:ObjectName="db-mssql.S10681">
       <DTS:ObjectData>
         <DTS:ConnectionManager
@@ -39,7 +39,7 @@
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[Excel Connection Manager]"
       DTS:CreationName="EXCEL"
-      DTS:DTSID="{A9211908-1F45-4727-9617-DD738DD7A25D}"
+      DTS:DTSID="{FD91667D-AFA7-42CC-BC3A-A8EC8FF2B7C0}"
       DTS:ObjectName="Excel Connection Manager">
       <DTS:ObjectData>
         <DTS:ConnectionManager
@@ -53,7 +53,7 @@
       DTS:refId="Package\Data Flow Task"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
-      DTS:DTSID="{EB2852E1-08A5-4297-8FB8-1D0816CEF616}"
+      DTS:DTSID="{E39454A2-27E1-4F1E-A1AD-C4FD02CFE284}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
       DTS:ObjectName="Data Flow Task"
@@ -1605,7 +1605,7 @@ ORDER BY r.DataZalozenia</property>
       DTS:refId="Package\Execute SQL Task"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:DTSID="{F484F7E9-D010-41FB-8F66-E1CA5021E680}"
+      DTS:DTSID="{C6FF0F3C-7EF9-4294-BFA8-D851DCE8472C}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Execute SQL Task"
@@ -1613,7 +1613,7 @@ ORDER BY r.DataZalozenia</property>
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{AD4AF427-655B-4890-8F2E-07F970EB8FAA}"
+          SQLTask:Connection="{F352521D-FA35-402B-A7DD-FD77903559BD}"
           SQLTask:SqlStatementSource="truncate table NB_Stage.RachunekSt" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -1622,7 +1622,7 @@ ORDER BY r.DataZalozenia</property>
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint]"
       DTS:CreationName=""
-      DTS:DTSID="{84B633A1-0DB6-4859-B231-9981517BD022}"
+      DTS:DTSID="{41E156E4-839C-40C6-A231-014FCCC009A5}"
       DTS:From="Package\Execute SQL Task"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint"
@@ -1641,16 +1641,16 @@ ORDER BY r.DataZalozenia</property>
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="153,42"
+          Size="151,42"
           Id="Package\Data Flow Task"
           TopLeft="322.5,206.5" />
         <NodeLayout
-          Size="165,42"
+          Size="163,42"
           Id="Package\Execute SQL Task"
           TopLeft="56,62" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="138.5,104">
+          TopLeft="137.5,104">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -1691,113 +1691,21 @@ ORDER BY r.DataZalozenia</property>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="171,42"
-          Id="Package\Data Flow Task\OLE DB Destination"
-          TopLeft="332.5,431.5" />
-        <NodeLayout
-          Size="107,42"
-          Id="Package\Data Flow Task\Sort 1"
-          TopLeft="254,133" />
-        <NodeLayout
-          Size="98,42"
-          Id="Package\Data Flow Task\Sort"
-          TopLeft="494,248" />
-        <NodeLayout
           Size="150,42"
           Id="Package\Data Flow Task\OLE DB Source"
           TopLeft="233.5,30.5" />
         <NodeLayout
-          Size="130,42"
-          Id="Package\Data Flow Task\Merge Join"
-          TopLeft="351,317" />
-        <NodeLayout
-          Size="156,42"
-          Id="Package\Data Flow Task\Data Conversion"
-          TopLeft="520,146" />
+          Size="171,42"
+          Id="Package\Data Flow Task\OLE DB Destination"
+          TopLeft="332.5,431.5" />
         <NodeLayout
           Size="139,42"
           Id="Package\Data Flow Task\Excel Source"
           TopLeft="540.5,46.5" />
-        <EdgeLayout
-          Id="Package\Data Flow Task.Paths[Sort Output]"
-          TopLeft="307.5,175">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="108.5,142"
-              Start="0,0"
-              End="108.5,134.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,67" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,67"
-                    Point2="0,71"
-                    Point3="4,71" />
-                  <mssgle:LineSegment
-                    End="104.5,71" />
-                  <mssgle:CubicBezierSegment
-                    Point1="104.5,71"
-                    Point2="108.5,71"
-                    Point3="108.5,75" />
-                  <mssgle:LineSegment
-                    End="108.5,134.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Data Flow Task.Paths[OLE DB Source Output]"
-          TopLeft="308,72.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60.5"
-              Start="0,0"
-              End="0,53">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,53" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Data Flow Task.Paths[Merge Join Output]"
-          TopLeft="417,359">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,72.5"
-              Start="0,0"
-              End="0,65">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,65" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-8,24.5,16,16"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+        <NodeLayout
+          Size="156,42"
+          Id="Package\Data Flow Task\Data Conversion"
+          TopLeft="520,146" />
         <EdgeLayout
           Id="Package\Data Flow Task.Paths[Excel Source Output]"
           TopLeft="610,88.5">
@@ -1832,6 +1740,10 @@ ORDER BY r.DataZalozenia</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <NodeLayout
+          Size="98,42"
+          Id="Package\Data Flow Task\Sort"
+          TopLeft="494,248" />
         <EdgeLayout
           Id="Package\Data Flow Task.Paths[Data Conversion Output]"
           TopLeft="598,188">
@@ -1858,6 +1770,94 @@ ORDER BY r.DataZalozenia</property>
                     Point3="-55,34" />
                   <mssgle:LineSegment
                     End="-55,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="107,42"
+          Id="Package\Data Flow Task\Sort 1"
+          TopLeft="254,133" />
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[OLE DB Source Output]"
+          TopLeft="308,72.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60.5"
+              Start="0,0"
+              End="0,53">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,53" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="130,42"
+          Id="Package\Data Flow Task\Merge Join"
+          TopLeft="351,317" />
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Merge Join Output]"
+          TopLeft="417,359">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,72.5"
+              Start="0,0"
+              End="0,65">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,65" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-8,24.5,16,16"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Sort Output]"
+          TopLeft="307.5,175">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="108.5,142"
+              Start="0,0"
+              End="108.5,134.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,67" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,67"
+                    Point2="0,71"
+                    Point3="4,71" />
+                  <mssgle:LineSegment
+                    End="104.5,71" />
+                  <mssgle:CubicBezierSegment
+                    Point1="104.5,71"
+                    Point2="108.5,71"
+                    Point3="108.5,75" />
+                  <mssgle:LineSegment
+                    End="108.5,134.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
