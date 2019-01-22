@@ -1,0 +1,186 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="2ef8ae78-098b-4655-bad6-1f30c384f283" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Sport Tracking Hur</ID>
+  <Name>Sport Tracking Hur</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>Sport Tracking Hur</DataSourceID>
+  <Schema>
+    <xs:schema id="Sport_x0020_Tracking_x0020_Hur" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="Sport_x0020_Tracking_x0020_Hur" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="936767ec-3ae3-4906-8de1-ca5c620eb8bc">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_Aktywnosc" msprop:design-time-name="4af1788f-0b21-4dc8-80b0-5a893e5becfb" msprop:DbTableName="Aktywnosc" msprop:FriendlyName="Aktywnosc" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="IdUzytkownik" msprop:design-time-name="dd57a582-7cd5-4201-9352-9a54009b9643" msprop:DbColumnName="IdUzytkownik" msprop:FriendlyName="IdUzytkownik" type="xs:int" />
+                  <xs:element name="IdCwiczenie" msprop:design-time-name="46ebe402-1ce2-400f-a824-b4c5ee88f2b2" msprop:DbColumnName="IdCwiczenie" msprop:FriendlyName="IdCwiczenie" type="xs:int" />
+                  <xs:element name="IdObszaru" msprop:design-time-name="ad03e319-1490-48cb-a8d4-8505d025f60e" msprop:DbColumnName="IdObszaru" msprop:FriendlyName="IdObszaru" type="xs:int" />
+                  <xs:element name="IdCzasu" msprop:design-time-name="d64dbed0-b402-4bdd-9bd5-13d7bf83ec6b" msprop:DbColumnName="IdCzasu" msprop:FriendlyName="IdCzasu" type="xs:int" />
+                  <xs:element name="IloscSpalonychKalorii" msprop:design-time-name="bec4c6ca-bc4e-49a8-aed8-af0e2dfe54c9" msprop:DbColumnName="IloscSpalonychKalorii" msprop:FriendlyName="IloscSpalonychKalorii" type="xs:int" />
+                  <xs:element name="CzasTrwaniaAktywnosci" msprop:design-time-name="b0834d4e-4060-4d8f-821d-f6cac6bbf2f4" msprop:DbColumnName="CzasTrwaniaAktywnosci" msprop:FriendlyName="CzasTrwaniaAktywnosci" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Cwiczenie" msprop:design-time-name="d8a19f03-a1c6-401f-8c1a-cc349ef17429" msprop:DbTableName="Cwiczenie" msprop:FriendlyName="Cwiczenie" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="IdCwiczenie" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="3d2ebf2e-9a1e-4b41-ac31-86afc6dbdbe7" msprop:DbColumnName="IdCwiczenie" msprop:FriendlyName="IdCwiczenie" type="xs:int" />
+                  <xs:element name="IdCwiczenieT" msprop:design-time-name="2f0b7c72-9459-4c3e-97c3-50a060a49481" msprop:DbColumnName="IdCwiczenieT" msprop:FriendlyName="IdCwiczenieT" type="xs:int" />
+                  <xs:element name="NazwaCwiczenia" msprop:design-time-name="b9d45412-1a4d-4f9c-8edc-b0f7e46eff7e" msprop:DbColumnName="NazwaCwiczenia" msprop:FriendlyName="NazwaCwiczenia">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="OpisCwiczenia" msprop:design-time-name="7d117f9d-068d-43b3-8d4c-11e321375d74" msprop:DbColumnName="OpisCwiczenia" msprop:FriendlyName="OpisCwiczenia" type="xs:string" minOccurs="0" />
+                  <xs:element name="NazwaMaszyny" msprop:design-time-name="40cd5480-d6ca-4df8-a73a-c2e1715f1b92" msprop:DbColumnName="NazwaMaszyny" msprop:FriendlyName="NazwaMaszyny" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Czas" msprop:design-time-name="bf6b0fbe-2418-4b02-aec0-be0830d43b0b" msprop:DbTableName="Czas" msprop:FriendlyName="Czas" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="IdCzasu" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="d9248bd2-d457-444c-9abe-0bc7401a2113" msprop:DbColumnName="IdCzasu" msprop:FriendlyName="IdCzasu" type="xs:int" />
+                  <xs:element name="Data" msprop:design-time-name="e6ef1d09-5303-413a-b081-3c37590784ae" msprop:DbColumnName="Data" msprop:FriendlyName="Data" type="xs:dateTime" />
+                  <xs:element name="Dzien" msprop:design-time-name="b33c5daa-a48e-4a49-97e7-ab4d2d740c81" msprop:DbColumnName="Dzien" msprop:FriendlyName="Dzien" type="xs:decimal" />
+                  <xs:element name="Miesiac" msprop:design-time-name="a8d396bb-8c0b-4726-9ec0-74832c486841" msprop:DbColumnName="Miesiac" msprop:FriendlyName="Miesiac" type="xs:decimal" />
+                  <xs:element name="Kwartal" msprop:design-time-name="02938f27-e57d-4513-8d8d-f19aa16203bc" msprop:DbColumnName="Kwartal" msprop:FriendlyName="Kwartal" type="xs:decimal" />
+                  <xs:element name="Rok" msprop:design-time-name="c06568a6-845b-441f-9b82-37ad62c8a3b8" msprop:DbColumnName="Rok" msprop:FriendlyName="Rok" type="xs:decimal" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Obszar" msprop:design-time-name="b526a985-17d1-4124-87f2-5e1528ecb31c" msprop:DbTableName="Obszar" msprop:FriendlyName="Obszar" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="IdObszaru" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="df3cdd2f-406c-4e5f-8f5a-64a0f88c809f" msprop:DbColumnName="IdObszaru" msprop:FriendlyName="IdObszaru" type="xs:int" />
+                  <xs:element name="IdObszaruT" msprop:design-time-name="c1d709a3-3da7-4642-b04e-bd2507cad02a" msprop:DbColumnName="IdObszaruT" msprop:FriendlyName="IdObszaruT" type="xs:int" />
+                  <xs:element name="NazwaObszaru" msprop:design-time-name="e7e43b42-b9f4-4af4-970f-e78d3376a21a" msprop:DbColumnName="NazwaObszaru" msprop:FriendlyName="NazwaObszaru">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Uzytkownik" msprop:design-time-name="35d518ec-2874-41f2-9a2f-86c100298553" msprop:DbTableName="Uzytkownik" msprop:FriendlyName="Uzytkownik" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="IdUzytkownik" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="1548cf2c-79ef-4d53-b4fa-ce807cd1e8cb" msprop:DbColumnName="IdUzytkownik" msprop:FriendlyName="IdUzytkownik" type="xs:int" />
+                  <xs:element name="IdUzytkownikT" msprop:design-time-name="4838e842-2585-4305-ad81-2d4178199955" msprop:DbColumnName="IdUzytkownikT" msprop:FriendlyName="IdUzytkownikT" type="xs:int" />
+                  <xs:element name="Imie" msprop:design-time-name="83210336-2777-4a1c-891c-0d03b7c85486" msprop:DbColumnName="Imie" msprop:FriendlyName="Imie">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Nazwisko" msprop:design-time-name="3a49ec8d-a745-4b5a-a091-35edd80ed086" msprop:DbColumnName="Nazwisko" msprop:FriendlyName="Nazwisko">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Plec" msprop:design-time-name="17ee56a5-9430-4b92-a3f6-a0f4e4ee90f7" msprop:DbColumnName="Plec" msprop:FriendlyName="Plec">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="DataUrodzenia" msprop:design-time-name="f846c95a-bc21-4b11-85d4-dec575316643" msprop:DbColumnName="DataUrodzenia" msprop:FriendlyName="DataUrodzenia" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="DataRejestracji" msprop:design-time-name="a4254b00-7ebf-4863-9552-cc86af89bc4a" msprop:DbColumnName="DataRejestracji" msprop:FriendlyName="DataRejestracji" type="xs:dateTime" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Aktywnosc" />
+          <xs:field xpath="IdUzytkownik" />
+          <xs:field xpath="IdCwiczenie" />
+          <xs:field xpath="IdObszaru" />
+          <xs:field xpath="IdCzasu" />
+        </xs:unique>
+        <xs:unique name="dbo_Cwiczenie_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Cwiczenie" />
+          <xs:field xpath="IdCwiczenie" />
+        </xs:unique>
+        <xs:unique name="dbo_Czas_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Czas" />
+          <xs:field xpath="IdCzasu" />
+        </xs:unique>
+        <xs:unique name="dbo_Obszar_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Obszar" />
+          <xs:field xpath="IdObszaru" />
+        </xs:unique>
+        <xs:unique name="dbo_Uzytkownik_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Uzytkownik" />
+          <xs:field xpath="IdUzytkownik" />
+        </xs:unique>
+        <xs:keyref name="fk_cwiczenie" refer="dbo_Cwiczenie_Constraint1">
+          <xs:selector xpath=".//dbo_Aktywnosc" />
+          <xs:field xpath="IdCwiczenie" />
+        </xs:keyref>
+        <xs:keyref name="fk_data" refer="dbo_Czas_Constraint1">
+          <xs:selector xpath=".//dbo_Aktywnosc" />
+          <xs:field xpath="IdCzasu" />
+        </xs:keyref>
+        <xs:keyref name="fk_obszar" refer="dbo_Obszar_Constraint1">
+          <xs:selector xpath=".//dbo_Aktywnosc" />
+          <xs:field xpath="IdObszaru" />
+        </xs:keyref>
+        <xs:keyref name="fk_uzytkownik" refer="dbo_Uzytkownik_Constraint1">
+          <xs:selector xpath=".//dbo_Aktywnosc" />
+          <xs:field xpath="IdUzytkownik" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <Sport_x0020_Tracking_x0020_Hur xmlns="" />
+  </Schema>
+</DataSourceView>

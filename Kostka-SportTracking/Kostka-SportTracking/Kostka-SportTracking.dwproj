@@ -6,10 +6,43 @@
     <Name>Kostka-SportTracking.database</Name>
     <FullPath>Kostka-SportTracking.database</FullPath>
   </Database>
+  <Dimensions>
+    <ProjectItem>
+      <Name>Cwiczenie.dim</Name>
+      <FullPath>Cwiczenie.dim</FullPath>
+    </ProjectItem>
+  </Dimensions>
+  <DataSources>
+    <ProjectItem>
+      <Name>Sport Tracking Hur.ds</Name>
+      <FullPath>Sport Tracking Hur.ds</FullPath>
+    </ProjectItem>
+  </DataSources>
+  <DataSourceViews>
+    <ProjectItem>
+      <Name>Sport Tracking Hur.dsv</Name>
+      <FullPath>Sport Tracking Hur.dsv</FullPath>
+    </ProjectItem>
+  </DataSourceViews>
   <Configurations>
     <Configuration>
       <Name>Development</Name>
-      <Options />
+      <Options>
+        <ConnectionMappings>
+          <ConfigurationSetting>
+            <Id>Sport Tracking Hur</Id>
+            <Name>Sport Tracking Hur</Name>
+            <Value xsi:type="xsd:string">Provider=SQLNCLI11.1;Data Source=localhost\sqlexpress;Integrated Security=SSPI;Initial Catalog=SportTrackingHur</Value>
+          </ConfigurationSetting>
+        </ConnectionMappings>
+        <ConnectionSecurityMappings>
+          <ConfigurationSetting>
+            <Id>Sport Tracking Hur</Id>
+            <Name>Sport Tracking Hur</Name>
+            <Value xsi:type="xsd:int">0</Value>
+          </ConfigurationSetting>
+        </ConnectionSecurityMappings>
+      </Options>
     </Configuration>
   </Configurations>
 </Project>
