@@ -2,23 +2,28 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>ETL-SportTracking</Name>
-    <LastWriteTime>2019-01-21T21:49:15.6579439Z</LastWriteTime>
+    <LastWriteTime>2019-01-22T21:37:57.4021154Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
     <ProjectBuildItemInfo>
-      <Name>Package.dtsx</Name>
-      <LastWriteTime>2019-01-21T21:49:06.3794132Z</LastWriteTime>
-      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
-    </ProjectBuildItemInfo>
-    <ProjectBuildItemInfo>
       <Name>uzytkownikSt.dtsx</Name>
-      <LastWriteTime>2019-01-21T21:19:51.8270585Z</LastWriteTime>
+      <LastWriteTime>2019-01-22T20:03:02.6298032Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>czasSt.dtsx</Name>
-      <LastWriteTime>2019-01-21T21:35:54.3081093Z</LastWriteTime>
+      <LastWriteTime>2019-01-22T19:49:38.9755261Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>obszarSt.dtsx</Name>
+      <LastWriteTime>2019-01-22T20:05:09.5624162Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>CwiczenieSt.dtsx</Name>
+      <LastWriteTime>2019-01-22T21:37:57.3591421Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>
