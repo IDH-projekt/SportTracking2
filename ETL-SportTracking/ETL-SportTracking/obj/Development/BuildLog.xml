@@ -2,15 +2,10 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>ETL-SportTracking</Name>
-    <LastWriteTime>2019-01-21T21:49:15.6579439Z</LastWriteTime>
+    <LastWriteTime>2019-01-23T20:33:28.8236156Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
-    <ProjectBuildItemInfo>
-      <Name>Package.dtsx</Name>
-      <LastWriteTime>2019-01-21T21:49:06.3794132Z</LastWriteTime>
-      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
-    </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>uzytkownikSt.dtsx</Name>
       <LastWriteTime>2019-01-21T21:19:51.8270585Z</LastWriteTime>
@@ -18,7 +13,17 @@
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>czasSt.dtsx</Name>
-      <LastWriteTime>2019-01-21T21:35:54.3081093Z</LastWriteTime>
+      <LastWriteTime>2019-01-23T20:33:28.7306153Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>obszarSt.dtsx</Name>
+      <LastWriteTime>2019-01-21T21:50:23.2228083Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>ŁadowaniePoczatkoweHurtowniNEW.dtsx</Name>
+      <LastWriteTime>2019-01-23T20:33:28.7774154Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>

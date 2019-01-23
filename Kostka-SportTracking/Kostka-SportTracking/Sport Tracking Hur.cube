@@ -1,0 +1,266 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="d391aacc-edde-488a-9cd2-1cab0a6674b3" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Sport Tracking Hur</ID>
+  <Name>Sport Tracking Hur</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="f245d75f-fb4b-44ab-bc6c-e61542d236c4">
+      <ID>Uzytkownik</ID>
+      <Name>Uzytkownik</Name>
+      <DimensionID>Uzytkownik</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="b8ce2496-1af6-49ce-bb9f-a63cf5760bb5">
+          <AttributeID>Id Uzytkownik</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="09b19ab8-61ec-4ae6-9bb2-35514d44a72f">
+          <AttributeID>Imie</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="fe518265-90a4-4899-973a-3e9c43b02e85">
+          <AttributeID>Nazwisko</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="1567280e-27f0-4206-92cb-3c1108eade28">
+          <AttributeID>Plec</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="2a7be1a0-37b7-4220-857e-0d0042f268e7">
+          <AttributeID>Data Urodzenia</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d127ea5e-b66e-4615-9c9e-4b34f5ed45e0">
+          <AttributeID>Data Rejestracji</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="6ac13884-cada-44fc-90b1-68d7d411265f">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="f65b6729-205e-4e6d-86e8-d269b24666d1">
+      <ID>Obszar</ID>
+      <Name>Obszar</Name>
+      <DimensionID>Obszar</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="2ff53e0e-9dd2-4580-af82-bdafba26681f">
+          <AttributeID>Id Obszaru</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="e425cc00-c38d-4b6f-8fd5-47353c2d8d91">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="9af97d62-9360-4a23-ae5b-65c61a708f74">
+      <ID>Czas</ID>
+      <Name>Czas</Name>
+      <DimensionID>Czas</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="b89ac4e1-110c-42aa-b68f-141b0e29144e">
+          <AttributeID>Id Czasu</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a6012742-2200-40dd-9976-03236529da31">
+          <AttributeID>Dzien</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="fb21607d-9a10-499e-94c7-2257411015c3">
+          <AttributeID>Miesiac</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="cf1632b6-d908-4a9d-901d-eb2db8fe6367">
+          <AttributeID>Kwartal</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="9cb594fa-af58-4d55-a8dd-c4eaecbfe2df">
+          <AttributeID>Rok</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="652b0414-31fb-48ff-a069-ff4e3e6a1dc0">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="34903af1-9e41-4e6b-9785-ee0bfbbfa915">
+      <ID>Cwiczenie</ID>
+      <Name>Cwiczenie</Name>
+      <DimensionID>Cwiczenie</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="fd8df8c0-90d8-4c8a-9806-7d5affde145d">
+          <AttributeID>Id Cwiczenie</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ab49462a-8c01-4165-8280-3b3806f4cea0">
+          <AttributeID>Opis Cwiczenia</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="cdece7b3-f8b6-4946-a7be-b3408a7192bf">
+          <AttributeID>Nazwa Maszyny</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="07742b5b-6b66-4315-8f20-625c9ff3eceb">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="382ba4e3-0d01-4acd-933f-53b5bf45af10">
+      <ID>Aktywnosc</ID>
+      <Name>Aktywnosc</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="b9e8ecc8-9f76-49ce-beac-b6cd364b3feb">
+          <ID>Ilosc Spalonych Kalorii</ID>
+          <Name>Ilosc Spalonych Kalorii</Name>
+          <Source dwd:design-time-name="8377c0c4-6a63-41bb-8c23-8186b85cf66b">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="196d0e9e-c6cd-4bcb-aa3a-8f4a67dcc3bf">
+              <TableID>dbo_Aktywnosc</TableID>
+              <ColumnID>IloscSpalonychKalorii</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="8a5f0deb-567d-41e7-83fc-9e97af2c8c37">
+          <ID>Czas Trwania Aktywnosci</ID>
+          <Name>Czas Trwania Aktywnosci</Name>
+          <Source dwd:design-time-name="f96fdfbd-ce73-4c3f-81a8-8af810c006a2">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="deb06ecf-5c9c-48e6-9b57-1f3e10c83119">
+              <TableID>dbo_Aktywnosc</TableID>
+              <ColumnID>CzasTrwaniaAktywnosci</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="67283928-aec5-4511-a294-2b5077f3434f">
+          <ID>Aktywnosc Count</ID>
+          <Name>Aktywnosc Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="0e51ae27-fe80-4fa0-8d8e-144eed8b7d49">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="dfdbb5b1-f878-4dfe-8a4a-511ad89d49a2">
+              <TableID>dbo_Aktywnosc</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="650c4d3f-d0a1-4008-acb1-669f99b314eb">
+          <CubeDimensionID>Uzytkownik</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="bf4a5d1c-c575-476d-b180-6b5fe490e3be">
+              <AttributeID>Id Uzytkownik</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="5d3f26b3-3463-4c96-ad20-eff9a88cd043">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="7313fbaf-ac8c-4424-8f92-3dbc3e1d5730">
+                    <TableID>dbo_Aktywnosc</TableID>
+                    <ColumnID>IdUzytkownik</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="a701d485-eb73-4bde-8482-77716788209a">
+          <CubeDimensionID>Obszar</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="d6e32311-0024-47dc-8ebb-2e0871e9e26f">
+              <AttributeID>Id Obszaru</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="9c705b84-400e-4bf4-a2ec-ec7b075d8822">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="9a84f8be-8bff-4ee0-be70-779dececbd75">
+                    <TableID>dbo_Aktywnosc</TableID>
+                    <ColumnID>IdObszaru</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="c07410ea-602e-42db-8ce1-4215604d1eab">
+          <CubeDimensionID>Czas</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="6e1dd98a-25e3-449a-9f3e-c020f73b20e1">
+              <AttributeID>Id Czasu</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="ddb85311-0aeb-44ca-a548-d089fc9148e6">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="9867e3ae-5cb5-4d8f-8f85-0fa94047bf5e">
+                    <TableID>dbo_Aktywnosc</TableID>
+                    <ColumnID>IdCzasu</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="a19f592d-a3f1-4af2-905e-5e234095e619">
+          <CubeDimensionID>Cwiczenie</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="2bdc308b-548c-4d4b-98ae-b32b7c0f8c80">
+              <AttributeID>Id Cwiczenie</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="4b0090ed-cb8b-40f9-8313-7700f695b84f">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="9dc5cc52-52c2-43a6-895f-116c08a9afe8">
+                    <TableID>dbo_Aktywnosc</TableID>
+                    <ColumnID>IdCwiczenie</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="69e224cb-244b-4e0c-b514-4d7b339f6d37">
+    <DataSourceViewID>Sport Tracking Hur</DataSourceViewID>
+  </Source>
+</Cube>

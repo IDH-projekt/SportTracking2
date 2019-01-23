@@ -1,0 +1,3227 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="12/1/2018 12:09:52 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="LAB130-15"
+  DTS:CreatorName="PJWSTK\s10681"
+  DTS:DTSID="{64B2815D-5291-47FE-A1C3-1732F3E35DA9}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="13.0.1601.5"
+  DTS:LocaleID="1045"
+  DTS:ObjectName="ŁadowaniePoczatkoweHurtowni"
+  DTS:PackageType="5"
+  DTS:VersionBuild="17"
+  DTS:VersionGUID="{180D5AB4-5468-4EBD-AD63-3EBFDF7370C4}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[db-mssql.S10681]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{B7231663-AFD2-4191-9E8D-97F8979B618F}"
+      DTS:ObjectName="db-mssql.S10681">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=db-mssql;Initial Catalog=S10681;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[localhost\sqlexpress.SportTrackingHur]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{A9426D7A-CFB0-4A57-A048-1696CFBEAF2A}"
+      DTS:ObjectName="localhost\sqlexpress.SportTrackingHur">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=localhost\sqlexpress;Initial Catalog=SportTrackingHur;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[localhost\sqlexpress.SportTrackingHur 1]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{A084D55D-6FEB-4E92-9876-19BB6AE3EB6D}"
+      DTS:ObjectName="localhost\sqlexpress.SportTrackingHur 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=localhost\sqlexpress;Initial Catalog=SportTrackingHur;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[localhost\sqlexpress.SportTrackingHur 2]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{5C41D00D-9351-4B7C-AE78-7B5ABE495CC7}"
+      DTS:ObjectName="localhost\sqlexpress.SportTrackingHur 2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=localhost\sqlexpress;Initial Catalog=SportTrackingHur;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[localhost\sqlexpress.SportTrackingHur 3]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{175BC0EE-DAD9-414A-9B80-732326BD88A2}"
+      DTS:ObjectName="localhost\sqlexpress.SportTrackingHur 3">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=localhost\sqlexpress;Initial Catalog=SportTrackingHur;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[localhost\sqlexpress.SportTrackingStage]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{CE1A2191-D0A3-4D91-BDA9-969D1088990A}"
+      DTS:ObjectName="localhost\sqlexpress.SportTrackingStage">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=localhost\sqlexpress;Initial Catalog=SportTrackingStage;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[localhost\sqlexpress.SportTrackingStage 1]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{62CDA150-DD43-4122-A362-56C1D1C875A2}"
+      DTS:ObjectName="localhost\sqlexpress.SportTrackingStage 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=localhost\sqlexpress;Initial Catalog=SportTrackingStage;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Execute SQL Task"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{D2B064A3-228B-40C2-B18E-2F658B784FC6}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Execute SQL Task"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{A9426D7A-CFB0-4A57-A048-1696CFBEAF2A}"
+          SQLTask:SqlStatementSource="ALTER TABLE Aktywnosc DROP CONSTRAINT fk_cwiczenie;&#xA;ALTER TABLE Aktywnosc DROP CONSTRAINT fk_data;&#xA;ALTER TABLE Aktywnosc DROP CONSTRAINT fk_obszar;&#xA;ALTER TABLE Aktywnosc DROP CONSTRAINT fk_uzytkownik;&#xA;truncate table Cwiczenie;&#xA;truncate table Czas;&#xA;truncate table Obszar;&#xA;truncate table Uzytkownik;&#xA;truncate table Aktywnosc;&#xA;ALTER TABLE&#x9;Aktywnosc&#xA;ADD CONSTRAINT&#x9;fk_cwiczenie&#xA;FOREIGN KEY(IdCwiczenie) REFERENCES Cwiczenie;&#xA;ALTER TABLE&#x9;Aktywnosc&#xA;ADD CONSTRAINT&#x9;fk_data&#xA;FOREIGN KEY(IdCzasu) REFERENCES Czas;&#xA;ALTER TABLE&#x9;Aktywnosc&#xA;ADD CONSTRAINT&#x9;fk_obszar&#xA;FOREIGN KEY(IdObszaru) REFERENCES Obszar;&#xA;ALTER TABLE&#x9;Aktywnosc&#xA;ADD CONSTRAINT&#x9;fk_uzytkownik&#xA;FOREIGN KEY(IdUzytkownik) REFERENCES Uzytkownik;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Fakty"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{E4915F37-A760-4780-A523-20C016D5121D}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Fakty"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Fakty\Lookup"
+              componentClassID="Microsoft.Lookup"
+              contactInfo="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6"
+              description="Joins additional columns to the data flow by looking up values in a table. For example, join to the 'employee id' column the employees table to get 'hire date' and 'employee name'. We recommend this transformation when the lookup table can fit into memory."
+              name="Lookup"
+              usesDispositions="true"
+              version="6">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the SQL statement that generates the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from [dbo].[Czas]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies a SQL statement that uses parameters to generate the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommandParam"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dbo].[Czas]) [refTable]
+where [refTable].[Data] = ?</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the type of connection used to access the reference dataset."
+                  name="ConnectionType"
+                  typeConverter="LookupConnectionType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the cache type of the lookup table."
+                  name="CacheType"
+                  typeConverter="CacheType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
+                  name="NoMatchBehavior"
+                  typeConverter="LookupNoMatchBehavior">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the percentage of the cache that is allocated for rows with no matching entries in the reference dataset."
+                  name="NoMatchCachePercentage">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Maximum Memory Usage for Reference Cache on a 32 bit platform."
+                  name="MaxMemoryUsage">25</property>
+                <property
+                  dataType="System.Int64"
+                  description="Maximum Memory Usage for Reference Cache on a 64 bit platform."
+                  name="MaxMemoryUsage64">25</property>
+                <property
+                  dataType="System.String"
+                  description="Indicates whether to reference metadata in an XML format."
+                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="IdCzasu" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Data" dataType="DT_DBDATE" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Dzien" dataType="DT_NUMERIC" length="0" precision="2" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Miesiac" dataType="DT_NUMERIC" length="0" precision="2" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Kwartal" dataType="DT_NUMERIC" length="0" precision="1" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Rok" dataType="DT_NUMERIC" length="0" precision="4" scale="0" codePage="0"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
+                <property
+                  containsID="true"
+                  dataType="System.String"
+                  description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
+                  name="ParameterMap">#{Package\Fakty\OLE DB Source.Outputs[OLE DB Source Output].Columns[Data]};</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1250</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Determines whether duplicate keys in the reference data should be treated as errors when full cache mode is used."
+                  name="TreatDuplicateKeysAsError">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Fakty\Lookup.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[localhost\sqlexpress.SportTrackingHur]"
+                  connectionManagerRefId="Package.ConnectionManagers[localhost\sqlexpress.SportTrackingHur]"
+                  description="Connection manager used to access lookup data."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Fakty\Lookup.Inputs[Lookup Input]"
+                  name="Lookup Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Fakty\Lookup.Inputs[Lookup Input].Columns[Data]"
+                      cachedDataType="dbDate"
+                      cachedName="Data"
+                      lineageId="Package\Fakty\OLE DB Source.Outputs[OLE DB Source Output].Columns[Data]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">Data</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Fakty\Lookup.Outputs[Lookup Match Output]"
+                  errorOrTruncationOperation="Lookup"
+                  errorRowDisposition="FailComponent"
+                  exclusionGroup="1"
+                  name="Lookup Match Output"
+                  synchronousInputId="Package\Fakty\Lookup.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Fakty\Lookup.Outputs[Lookup Match Output].Columns[IdCzasu]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Copy Column"
+                      lineageId="Package\Fakty\Lookup.Outputs[Lookup Match Output].Columns[IdCzasu]"
+                      name="IdCzasu"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn">IdCzasu</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Fakty\Lookup.Outputs[Lookup No Match Output]"
+                  description="The Lookup output that handles rows with no matching entries in the reference dataset. Use this output when the NoMatchBehavior property is set to &quot;Send rows with no matching entries to the no match output.&quot;"
+                  exclusionGroup="1"
+                  name="Lookup No Match Output"
+                  synchronousInputId="Package\Fakty\Lookup.Inputs[Lookup Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Fakty\Lookup.Outputs[Lookup Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Lookup Error Output"
+                  synchronousInputId="Package\Fakty\Lookup.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Fakty\Lookup.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Fakty\Lookup.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Fakty\Lookup.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Fakty\Lookup.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Fakty\Lookup 1"
+              componentClassID="Microsoft.Lookup"
+              contactInfo="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6"
+              description="Joins additional columns to the data flow by looking up values in a table. For example, join to the 'employee id' column the employees table to get 'hire date' and 'employee name'. We recommend this transformation when the lookup table can fit into memory."
+              name="Lookup 1"
+              usesDispositions="true"
+              version="6">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the SQL statement that generates the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from [dbo].[Cwiczenie]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies a SQL statement that uses parameters to generate the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommandParam"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the type of connection used to access the reference dataset."
+                  name="ConnectionType"
+                  typeConverter="LookupConnectionType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the cache type of the lookup table."
+                  name="CacheType"
+                  typeConverter="CacheType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
+                  name="NoMatchBehavior"
+                  typeConverter="LookupNoMatchBehavior">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the percentage of the cache that is allocated for rows with no matching entries in the reference dataset."
+                  name="NoMatchCachePercentage">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Maximum Memory Usage for Reference Cache on a 32 bit platform."
+                  name="MaxMemoryUsage">25</property>
+                <property
+                  dataType="System.Int64"
+                  description="Maximum Memory Usage for Reference Cache on a 64 bit platform."
+                  name="MaxMemoryUsage64">25</property>
+                <property
+                  dataType="System.String"
+                  description="Indicates whether to reference metadata in an XML format."
+                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="IdCwiczenie" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="IdCwiczenieT" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="NazwaCwiczenia" dataType="DT_STR" length="255" precision="0" scale="0" codePage="1250"/&gt;&lt;referenceColumn name="OpisCwiczenia" dataType="DT_TEXT" length="0" precision="0" scale="0" codePage="1250"/&gt;&lt;referenceColumn name="NazwaMaszyny" dataType="DT_STR" length="255" precision="0" scale="0" codePage="1250"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
+                <property
+                  containsID="true"
+                  dataType="System.String"
+                  description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
+                  name="ParameterMap"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1250</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Determines whether duplicate keys in the reference data should be treated as errors when full cache mode is used."
+                  name="TreatDuplicateKeysAsError">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Fakty\Lookup 1.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[localhost\sqlexpress.SportTrackingHur]"
+                  connectionManagerRefId="Package.ConnectionManagers[localhost\sqlexpress.SportTrackingHur]"
+                  description="Connection manager used to access lookup data."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Fakty\Lookup 1.Inputs[Lookup Input]"
+                  name="Lookup Input">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Fakty\Lookup 1.Outputs[Lookup Match Output]"
+                  errorOrTruncationOperation="Lookup"
+                  errorRowDisposition="FailComponent"
+                  exclusionGroup="1"
+                  name="Lookup Match Output"
+                  synchronousInputId="Package\Fakty\Lookup 1.Inputs[Lookup Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Fakty\Lookup 1.Outputs[Lookup No Match Output]"
+                  description="The Lookup output that handles rows with no matching entries in the reference dataset. Use this output when the NoMatchBehavior property is set to &quot;Send rows with no matching entries to the no match output.&quot;"
+                  exclusionGroup="1"
+                  name="Lookup No Match Output"
+                  synchronousInputId="Package\Fakty\Lookup 1.Inputs[Lookup Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Fakty\Lookup 1.Outputs[Lookup Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Lookup Error Output"
+                  synchronousInputId="Package\Fakty\Lookup 1.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Fakty\Lookup 1.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Fakty\Lookup 1.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Fakty\Lookup 1.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Fakty\Lookup 1.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Fakty\Lookup 2"
+              componentClassID="Microsoft.Lookup"
+              contactInfo="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6"
+              description="Joins additional columns to the data flow by looking up values in a table. For example, join to the 'employee id' column the employees table to get 'hire date' and 'employee name'. We recommend this transformation when the lookup table can fit into memory."
+              name="Lookup 2"
+              usesDispositions="true"
+              version="6">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the SQL statement that generates the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from [dbo].[Obszar]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies a SQL statement that uses parameters to generate the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommandParam"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the type of connection used to access the reference dataset."
+                  name="ConnectionType"
+                  typeConverter="LookupConnectionType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the cache type of the lookup table."
+                  name="CacheType"
+                  typeConverter="CacheType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
+                  name="NoMatchBehavior"
+                  typeConverter="LookupNoMatchBehavior">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the percentage of the cache that is allocated for rows with no matching entries in the reference dataset."
+                  name="NoMatchCachePercentage">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Maximum Memory Usage for Reference Cache on a 32 bit platform."
+                  name="MaxMemoryUsage">25</property>
+                <property
+                  dataType="System.Int64"
+                  description="Maximum Memory Usage for Reference Cache on a 64 bit platform."
+                  name="MaxMemoryUsage64">25</property>
+                <property
+                  dataType="System.String"
+                  description="Indicates whether to reference metadata in an XML format."
+                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="IdObszaru" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="IdObszaruT" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="NazwaObszaru" dataType="DT_STR" length="255" precision="0" scale="0" codePage="1250"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
+                <property
+                  containsID="true"
+                  dataType="System.String"
+                  description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
+                  name="ParameterMap"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1250</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Determines whether duplicate keys in the reference data should be treated as errors when full cache mode is used."
+                  name="TreatDuplicateKeysAsError">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Fakty\Lookup 2.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[localhost\sqlexpress.SportTrackingHur]"
+                  connectionManagerRefId="Package.ConnectionManagers[localhost\sqlexpress.SportTrackingHur]"
+                  description="Connection manager used to access lookup data."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Fakty\Lookup 2.Inputs[Lookup Input]"
+                  name="Lookup Input">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Fakty\Lookup 2.Outputs[Lookup Match Output]"
+                  errorOrTruncationOperation="Lookup"
+                  errorRowDisposition="FailComponent"
+                  exclusionGroup="1"
+                  name="Lookup Match Output"
+                  synchronousInputId="Package\Fakty\Lookup 2.Inputs[Lookup Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Fakty\Lookup 2.Outputs[Lookup No Match Output]"
+                  description="The Lookup output that handles rows with no matching entries in the reference dataset. Use this output when the NoMatchBehavior property is set to &quot;Send rows with no matching entries to the no match output.&quot;"
+                  exclusionGroup="1"
+                  name="Lookup No Match Output"
+                  synchronousInputId="Package\Fakty\Lookup 2.Inputs[Lookup Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Fakty\Lookup 2.Outputs[Lookup Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Lookup Error Output"
+                  synchronousInputId="Package\Fakty\Lookup 2.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Fakty\Lookup 2.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Fakty\Lookup 2.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Fakty\Lookup 2.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Fakty\Lookup 2.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Fakty\Lookup 3"
+              componentClassID="Microsoft.Lookup"
+              contactInfo="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6"
+              description="Joins additional columns to the data flow by looking up values in a table. For example, join to the 'employee id' column the employees table to get 'hire date' and 'employee name'. We recommend this transformation when the lookup table can fit into memory."
+              name="Lookup 3"
+              usesDispositions="true"
+              version="6">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the SQL statement that generates the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from [NB_HUR].[RodzajOperacji]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies a SQL statement that uses parameters to generate the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommandParam"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [NB_HUR].[RodzajOperacji]) [refTable]
+where [refTable].[IdRodzajuOperacjiT] = ?</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the type of connection used to access the reference dataset."
+                  name="ConnectionType"
+                  typeConverter="LookupConnectionType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the cache type of the lookup table."
+                  name="CacheType"
+                  typeConverter="CacheType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
+                  name="NoMatchBehavior"
+                  typeConverter="LookupNoMatchBehavior">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the percentage of the cache that is allocated for rows with no matching entries in the reference dataset."
+                  name="NoMatchCachePercentage">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Maximum Memory Usage for Reference Cache on a 32 bit platform."
+                  name="MaxMemoryUsage">25</property>
+                <property
+                  dataType="System.Int64"
+                  description="Maximum Memory Usage for Reference Cache on a 64 bit platform."
+                  name="MaxMemoryUsage64">25</property>
+                <property
+                  dataType="System.String"
+                  description="Indicates whether to reference metadata in an XML format."
+                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="IdRodzajuOperacji" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="IdRodzajuOperacjiT" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Rodzaj" dataType="DT_STR" length="150" precision="0" scale="0" codePage="1250"/&gt;&lt;referenceColumn name="RodzajAngielski" dataType="DT_STR" length="150" precision="0" scale="0" codePage="1250"/&gt;&lt;referenceColumn name="Typ" dataType="DT_STR" length="50" precision="0" scale="0" codePage="1250"/&gt;&lt;referenceColumn name="TypAngielski" dataType="DT_STR" length="50" precision="0" scale="0" codePage="1250"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
+                <property
+                  containsID="true"
+                  dataType="System.String"
+                  description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
+                  name="ParameterMap">#{Package\Fakty\239:invalid};</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1250</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Determines whether duplicate keys in the reference data should be treated as errors when full cache mode is used."
+                  name="TreatDuplicateKeysAsError">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Fakty\Lookup 3.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[db-mssql.S10681]"
+                  connectionManagerRefId="Package.ConnectionManagers[db-mssql.S10681]"
+                  description="Connection manager used to access lookup data."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Fakty\Lookup 3.Inputs[Lookup Input]"
+                  name="Lookup Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Fakty\Lookup 3.Inputs[Lookup Input].Columns[IdRodzajuOperacjiT]"
+                      cachedDataType="i4"
+                      cachedName="IdRodzajuOperacjiT"
+                      lineageId="Package\Fakty\239:invalid">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">IdRodzajuOperacjiT</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Fakty\Lookup 3.Outputs[Lookup Match Output]"
+                  errorOrTruncationOperation="Lookup"
+                  errorRowDisposition="FailComponent"
+                  exclusionGroup="1"
+                  name="Lookup Match Output"
+                  synchronousInputId="Package\Fakty\Lookup 3.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Fakty\Lookup 3.Outputs[Lookup Match Output].Columns[IdRodzajuOperacji]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Copy Column"
+                      lineageId="Package\Fakty\Lookup 3.Outputs[Lookup Match Output].Columns[IdRodzajuOperacji]"
+                      name="IdRodzajuOperacji"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn">IdRodzajuOperacji</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Fakty\Lookup 3.Outputs[Lookup No Match Output]"
+                  description="The Lookup output that handles rows with no matching entries in the reference dataset. Use this output when the NoMatchBehavior property is set to &quot;Send rows with no matching entries to the no match output.&quot;"
+                  exclusionGroup="1"
+                  name="Lookup No Match Output"
+                  synchronousInputId="Package\Fakty\Lookup 3.Inputs[Lookup Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Fakty\Lookup 3.Outputs[Lookup Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Lookup Error Output"
+                  synchronousInputId="Package\Fakty\Lookup 3.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Fakty\Lookup 3.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Fakty\Lookup 3.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Fakty\Lookup 3.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Fakty\Lookup 3.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Fakty\OLE DB Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[Aktywnosc]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1250</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Fakty\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[localhost\sqlexpress.SportTrackingHur]"
+                  connectionManagerRefId="Package.ConnectionManagers[localhost\sqlexpress.SportTrackingHur]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Fakty\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Fakty\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[IdCzasu]"
+                      cachedDataType="i4"
+                      cachedName="IdCzasu"
+                      externalMetadataColumnId="Package\Fakty\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[IdCzasu]"
+                      lineageId="Package\Fakty\Lookup.Outputs[Lookup Match Output].Columns[IdCzasu]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Fakty\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[IdCzasu]"
+                      dataType="i4"
+                      name="IdCzasu" />
+                    <externalMetadataColumn
+                      refId="Package\Fakty\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[IdUzytkownik]"
+                      dataType="i4"
+                      name="IdUzytkownik" />
+                    <externalMetadataColumn
+                      refId="Package\Fakty\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[IdCwiczenie]"
+                      dataType="i4"
+                      name="IdCwiczenie" />
+                    <externalMetadataColumn
+                      refId="Package\Fakty\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[IdObszaru]"
+                      dataType="i4"
+                      name="IdObszaru" />
+                    <externalMetadataColumn
+                      refId="Package\Fakty\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[IloscSpalonychKalorii]"
+                      dataType="i4"
+                      name="IloscSpalonychKalorii" />
+                    <externalMetadataColumn
+                      refId="Package\Fakty\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CzasTrwaniaAktywnosci]"
+                      dataType="i4"
+                      name="CzasTrwaniaAktywnosci" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Fakty\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Fakty\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Fakty\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Fakty\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Fakty\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Fakty\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Fakty\OLE DB Source"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="OLE DB Source"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[AktywnoscSt]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1250</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Fakty\OLE DB Source.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[localhost\sqlexpress.SportTrackingStage]"
+                  connectionManagerRefId="Package.ConnectionManagers[localhost\sqlexpress.SportTrackingStage]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Fakty\OLE DB Source.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Fakty\OLE DB Source.Outputs[OLE DB Source Output].Columns[Data]"
+                      dataType="dbDate"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Fakty\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Data]"
+                      lineageId="Package\Fakty\OLE DB Source.Outputs[OLE DB Source Output].Columns[Data]"
+                      name="Data"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Fakty\OLE DB Source.Outputs[OLE DB Source Output].Columns[IdUzytkownikT]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Fakty\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[IdUzytkownikT]"
+                      lineageId="Package\Fakty\OLE DB Source.Outputs[OLE DB Source Output].Columns[IdUzytkownikT]"
+                      name="IdUzytkownikT"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Fakty\OLE DB Source.Outputs[OLE DB Source Output].Columns[IdCwiczenieT]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Fakty\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[IdCwiczenieT]"
+                      lineageId="Package\Fakty\OLE DB Source.Outputs[OLE DB Source Output].Columns[IdCwiczenieT]"
+                      name="IdCwiczenieT"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Fakty\OLE DB Source.Outputs[OLE DB Source Output].Columns[IdObszaruT]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Fakty\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[IdObszaruT]"
+                      lineageId="Package\Fakty\OLE DB Source.Outputs[OLE DB Source Output].Columns[IdObszaruT]"
+                      name="IdObszaruT"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Fakty\OLE DB Source.Outputs[OLE DB Source Output].Columns[IloscSpalonychKalorii]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Fakty\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[IloscSpalonychKalorii]"
+                      lineageId="Package\Fakty\OLE DB Source.Outputs[OLE DB Source Output].Columns[IloscSpalonychKalorii]"
+                      name="IloscSpalonychKalorii"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Fakty\OLE DB Source.Outputs[OLE DB Source Output].Columns[CzasTrwaniaAktywnosci]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Fakty\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[CzasTrwaniaAktywnosci]"
+                      lineageId="Package\Fakty\OLE DB Source.Outputs[OLE DB Source Output].Columns[CzasTrwaniaAktywnosci]"
+                      name="CzasTrwaniaAktywnosci"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Fakty\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Data]"
+                      dataType="dbDate"
+                      name="Data" />
+                    <externalMetadataColumn
+                      refId="Package\Fakty\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[IdUzytkownikT]"
+                      dataType="i4"
+                      name="IdUzytkownikT" />
+                    <externalMetadataColumn
+                      refId="Package\Fakty\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[IdCwiczenieT]"
+                      dataType="i4"
+                      name="IdCwiczenieT" />
+                    <externalMetadataColumn
+                      refId="Package\Fakty\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[IdObszaruT]"
+                      dataType="i4"
+                      name="IdObszaruT" />
+                    <externalMetadataColumn
+                      refId="Package\Fakty\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[IloscSpalonychKalorii]"
+                      dataType="i4"
+                      name="IloscSpalonychKalorii" />
+                    <externalMetadataColumn
+                      refId="Package\Fakty\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[CzasTrwaniaAktywnosci]"
+                      dataType="i4"
+                      name="CzasTrwaniaAktywnosci" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Fakty\OLE DB Source.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Fakty\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[IdUzytkownikT]"
+                      dataType="i4"
+                      lineageId="Package\Fakty\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[IdUzytkownikT]"
+                      name="IdUzytkownikT" />
+                    <outputColumn
+                      refId="Package\Fakty\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[IdCwiczenieT]"
+                      dataType="i4"
+                      lineageId="Package\Fakty\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[IdCwiczenieT]"
+                      name="IdCwiczenieT" />
+                    <outputColumn
+                      refId="Package\Fakty\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[IdObszaruT]"
+                      dataType="i4"
+                      lineageId="Package\Fakty\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[IdObszaruT]"
+                      name="IdObszaruT" />
+                    <outputColumn
+                      refId="Package\Fakty\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Data]"
+                      dataType="dbDate"
+                      lineageId="Package\Fakty\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Data]"
+                      name="Data" />
+                    <outputColumn
+                      refId="Package\Fakty\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[IloscSpalonychKalorii]"
+                      dataType="i4"
+                      lineageId="Package\Fakty\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[IloscSpalonychKalorii]"
+                      name="IloscSpalonychKalorii" />
+                    <outputColumn
+                      refId="Package\Fakty\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[CzasTrwaniaAktywnosci]"
+                      dataType="i4"
+                      lineageId="Package\Fakty\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[CzasTrwaniaAktywnosci]"
+                      name="CzasTrwaniaAktywnosci" />
+                    <outputColumn
+                      refId="Package\Fakty\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Fakty\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Fakty\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Fakty\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Fakty.Paths[Lookup Match Output]"
+              endId="Package\Fakty\Lookup 1.Inputs[Lookup Input]"
+              name="Lookup Match Output"
+              startId="Package\Fakty\Lookup.Outputs[Lookup Match Output]" />
+            <path
+              refId="Package\Fakty.Paths[Lookup Match Output1]"
+              endId="Package\Fakty\Lookup 2.Inputs[Lookup Input]"
+              name="Lookup Match Output"
+              startId="Package\Fakty\Lookup 1.Outputs[Lookup Match Output]" />
+            <path
+              refId="Package\Fakty.Paths[Lookup Match Output2]"
+              endId="Package\Fakty\Lookup 3.Inputs[Lookup Input]"
+              name="Lookup Match Output"
+              startId="Package\Fakty\Lookup 2.Outputs[Lookup Match Output]" />
+            <path
+              refId="Package\Fakty.Paths[Lookup Match Output3]"
+              endId="Package\Fakty\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="Lookup Match Output"
+              startId="Package\Fakty\Lookup 3.Outputs[Lookup Match Output]" />
+            <path
+              refId="Package\Fakty.Paths[OLE DB Source Output]"
+              endId="Package\Fakty\Lookup.Inputs[Lookup Input]"
+              name="OLE DB Source Output"
+              startId="Package\Fakty\OLE DB Source.Outputs[OLE DB Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Sequence Container"
+      DTS:CreationName="STOCK:SEQUENCE"
+      DTS:Description="Sequence Container"
+      DTS:DTSID="{9A63F3BE-59C6-4A21-A3A4-B64F873C3EE1}"
+      DTS:ExecutableType="STOCK:SEQUENCE"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Sequence Container">
+      <DTS:Variables />
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package\Sequence Container\Cwiczenie"
+          DTS:CreationName="Microsoft.Pipeline"
+          DTS:Description="Data Flow Task"
+          DTS:DTSID="{2EA3D467-D87A-46B6-8FB7-C9B63F4B73E9}"
+          DTS:ExecutableType="Microsoft.Pipeline"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Cwiczenie"
+          DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <pipeline
+              version="1">
+              <components>
+                <component
+                  refId="Package\Sequence Container\Cwiczenie\OLE DB Destination"
+                  componentClassID="Microsoft.OLEDBDestination"
+                  contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+                  description="OLE DB Destination"
+                  name="OLE DB Destination"
+                  usesDispositions="true"
+                  version="4">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">[dbo].[Cwiczenie]</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1250</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">3</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepIdentity">false</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                      name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                      name="FastLoadMaxInsertCommitSize">2147483647</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Sequence Container\Cwiczenie\OLE DB Destination.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[localhost\sqlexpress.SportTrackingHur 3]"
+                      connectionManagerRefId="Package.ConnectionManagers[localhost\sqlexpress.SportTrackingHur 3]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\Sequence Container\Cwiczenie\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                      errorOrTruncationOperation="Insert"
+                      errorRowDisposition="FailComponent"
+                      hasSideEffects="true"
+                      name="OLE DB Destination Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Sequence Container\Cwiczenie\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[IdCwiczenieT]"
+                          cachedDataType="i4"
+                          cachedName="IdCwiczenieT"
+                          externalMetadataColumnId="Package\Sequence Container\Cwiczenie\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[IdCwiczenieT]"
+                          lineageId="Package\Sequence Container\Cwiczenie\OLE DB Source.Outputs[OLE DB Source Output].Columns[IdCwiczenieT]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\Cwiczenie\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[NazwaCwiczenia]"
+                          cachedCodepage="1250"
+                          cachedDataType="str"
+                          cachedLength="255"
+                          cachedName="NazwaCwiczenia"
+                          externalMetadataColumnId="Package\Sequence Container\Cwiczenie\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NazwaCwiczenia]"
+                          lineageId="Package\Sequence Container\Cwiczenie\OLE DB Source.Outputs[OLE DB Source Output].Columns[NazwaCwiczenia]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\Cwiczenie\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[OpisCwiczenia]"
+                          cachedCodepage="1250"
+                          cachedDataType="text"
+                          cachedName="OpisCwiczenia"
+                          externalMetadataColumnId="Package\Sequence Container\Cwiczenie\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[OpisCwiczenia]"
+                          lineageId="Package\Sequence Container\Cwiczenie\OLE DB Source.Outputs[OLE DB Source Output].Columns[OpisCwiczenia]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\Cwiczenie\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[NazwaMaszyny]"
+                          cachedCodepage="1250"
+                          cachedDataType="str"
+                          cachedLength="255"
+                          cachedName="NazwaMaszyny"
+                          externalMetadataColumnId="Package\Sequence Container\Cwiczenie\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NazwaMaszyny]"
+                          lineageId="Package\Sequence Container\Cwiczenie\OLE DB Source.Outputs[OLE DB Source Output].Columns[NazwaMaszyny]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Cwiczenie\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[IdCwiczenie]"
+                          dataType="i4"
+                          name="IdCwiczenie" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Cwiczenie\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[IdCwiczenieT]"
+                          dataType="i4"
+                          name="IdCwiczenieT" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Cwiczenie\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NazwaCwiczenia]"
+                          codePage="1250"
+                          dataType="str"
+                          length="255"
+                          name="NazwaCwiczenia" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Cwiczenie\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[OpisCwiczenia]"
+                          codePage="1250"
+                          dataType="text"
+                          name="OpisCwiczenia" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Cwiczenie\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NazwaMaszyny]"
+                          codePage="1250"
+                          dataType="str"
+                          length="255"
+                          name="NazwaMaszyny" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Sequence Container\Cwiczenie\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="OLE DB Destination Error Output"
+                      synchronousInputId="Package\Sequence Container\Cwiczenie\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Sequence Container\Cwiczenie\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\Cwiczenie\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Cwiczenie\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\Cwiczenie\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Sequence Container\Cwiczenie\OLE DB Source"
+                  componentClassID="Microsoft.OLEDBSource"
+                  contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+                  description="OLE DB Source"
+                  name="OLE DB Source"
+                  usesDispositions="true"
+                  version="7">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">[dbo].[CwiczenieSt]</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                    <property
+                      dataType="System.String"
+                      description="The variable that contains the SQL command to be executed."
+                      name="SqlCommandVariable"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1250</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">0</property>
+                    <property
+                      dataType="System.String"
+                      description="The mappings between the parameters in the SQL command and variables."
+                      name="ParameterMapping"></property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Sequence Container\Cwiczenie\OLE DB Source.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[localhost\sqlexpress.SportTrackingStage 1]"
+                      connectionManagerRefId="Package.ConnectionManagers[localhost\sqlexpress.SportTrackingStage 1]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <outputs>
+                    <output
+                      refId="Package\Sequence Container\Cwiczenie\OLE DB Source.Outputs[OLE DB Source Output]"
+                      name="OLE DB Source Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Sequence Container\Cwiczenie\OLE DB Source.Outputs[OLE DB Source Output].Columns[IdCwiczenieT]"
+                          dataType="i4"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\Cwiczenie\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[IdCwiczenieT]"
+                          lineageId="Package\Sequence Container\Cwiczenie\OLE DB Source.Outputs[OLE DB Source Output].Columns[IdCwiczenieT]"
+                          name="IdCwiczenieT"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Cwiczenie\OLE DB Source.Outputs[OLE DB Source Output].Columns[NazwaCwiczenia]"
+                          codePage="1250"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\Cwiczenie\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[NazwaCwiczenia]"
+                          length="255"
+                          lineageId="Package\Sequence Container\Cwiczenie\OLE DB Source.Outputs[OLE DB Source Output].Columns[NazwaCwiczenia]"
+                          name="NazwaCwiczenia"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Cwiczenie\OLE DB Source.Outputs[OLE DB Source Output].Columns[OpisCwiczenia]"
+                          codePage="1250"
+                          dataType="text"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\Cwiczenie\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[OpisCwiczenia]"
+                          lineageId="Package\Sequence Container\Cwiczenie\OLE DB Source.Outputs[OLE DB Source Output].Columns[OpisCwiczenia]"
+                          name="OpisCwiczenia"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Cwiczenie\OLE DB Source.Outputs[OLE DB Source Output].Columns[NazwaMaszyny]"
+                          codePage="1250"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\Cwiczenie\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[NazwaMaszyny]"
+                          length="255"
+                          lineageId="Package\Sequence Container\Cwiczenie\OLE DB Source.Outputs[OLE DB Source Output].Columns[NazwaMaszyny]"
+                          name="NazwaMaszyny"
+                          truncationRowDisposition="FailComponent" />
+                      </outputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Cwiczenie\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[IdCwiczenieT]"
+                          dataType="i4"
+                          name="IdCwiczenieT" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Cwiczenie\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[NazwaCwiczenia]"
+                          codePage="1250"
+                          dataType="str"
+                          length="255"
+                          name="NazwaCwiczenia" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Cwiczenie\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[OpisCwiczenia]"
+                          codePage="1250"
+                          dataType="text"
+                          name="OpisCwiczenia" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Cwiczenie\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[NazwaMaszyny]"
+                          codePage="1250"
+                          dataType="str"
+                          length="255"
+                          name="NazwaMaszyny" />
+                      </externalMetadataColumns>
+                    </output>
+                    <output
+                      refId="Package\Sequence Container\Cwiczenie\OLE DB Source.Outputs[OLE DB Source Error Output]"
+                      isErrorOut="true"
+                      name="OLE DB Source Error Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Sequence Container\Cwiczenie\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[IdCwiczenieT]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\Cwiczenie\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[IdCwiczenieT]"
+                          name="IdCwiczenieT" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Cwiczenie\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[NazwaCwiczenia]"
+                          codePage="1250"
+                          dataType="str"
+                          length="255"
+                          lineageId="Package\Sequence Container\Cwiczenie\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[NazwaCwiczenia]"
+                          name="NazwaCwiczenia" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Cwiczenie\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[OpisCwiczenia]"
+                          codePage="1250"
+                          dataType="text"
+                          lineageId="Package\Sequence Container\Cwiczenie\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[OpisCwiczenia]"
+                          name="OpisCwiczenia" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Cwiczenie\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[NazwaMaszyny]"
+                          codePage="1250"
+                          dataType="str"
+                          length="255"
+                          lineageId="Package\Sequence Container\Cwiczenie\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[NazwaMaszyny]"
+                          name="NazwaMaszyny" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Cwiczenie\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\Cwiczenie\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Cwiczenie\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\Cwiczenie\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+              </components>
+              <paths>
+                <path
+                  refId="Package\Sequence Container\Cwiczenie.Paths[OLE DB Source Output]"
+                  endId="Package\Sequence Container\Cwiczenie\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  name="OLE DB Source Output"
+                  startId="Package\Sequence Container\Cwiczenie\OLE DB Source.Outputs[OLE DB Source Output]" />
+              </paths>
+            </pipeline>
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Sequence Container\Czas"
+          DTS:CreationName="Microsoft.Pipeline"
+          DTS:Description="Data Flow Task"
+          DTS:DTSID="{1DDE23CD-E026-417B-882F-CFF470C19FD4}"
+          DTS:ExecutableType="Microsoft.Pipeline"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Czas"
+          DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <pipeline
+              version="1">
+              <components>
+                <component
+                  refId="Package\Sequence Container\Czas\OLE DB Destination"
+                  componentClassID="Microsoft.OLEDBDestination"
+                  contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+                  description="OLE DB Destination"
+                  name="OLE DB Destination"
+                  usesDispositions="true"
+                  version="4">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">[dbo].[Czas]</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1250</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">3</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepIdentity">false</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                      name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                      name="FastLoadMaxInsertCommitSize">2147483647</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Sequence Container\Czas\OLE DB Destination.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[localhost\sqlexpress.SportTrackingHur 2]"
+                      connectionManagerRefId="Package.ConnectionManagers[localhost\sqlexpress.SportTrackingHur 2]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\Sequence Container\Czas\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                      errorOrTruncationOperation="Insert"
+                      errorRowDisposition="FailComponent"
+                      hasSideEffects="true"
+                      name="OLE DB Destination Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Sequence Container\Czas\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Data]"
+                          cachedDataType="dbDate"
+                          cachedName="Data"
+                          externalMetadataColumnId="Package\Sequence Container\Czas\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Data]"
+                          lineageId="Package\Sequence Container\Czas\OLE DB Source.Outputs[OLE DB Source Output].Columns[Data]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\Czas\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Dzien]"
+                          cachedDataType="numeric"
+                          cachedName="Dzien"
+                          cachedPrecision="2"
+                          externalMetadataColumnId="Package\Sequence Container\Czas\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Dzien]"
+                          lineageId="Package\Sequence Container\Czas\OLE DB Source.Outputs[OLE DB Source Output].Columns[Dzien]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\Czas\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Miesiac]"
+                          cachedDataType="numeric"
+                          cachedName="Miesiac"
+                          cachedPrecision="2"
+                          externalMetadataColumnId="Package\Sequence Container\Czas\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Miesiac]"
+                          lineageId="Package\Sequence Container\Czas\OLE DB Source.Outputs[OLE DB Source Output].Columns[Miesiac]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\Czas\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Kwartal]"
+                          cachedDataType="numeric"
+                          cachedName="Kwartal"
+                          cachedPrecision="1"
+                          externalMetadataColumnId="Package\Sequence Container\Czas\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Kwartal]"
+                          lineageId="Package\Sequence Container\Czas\OLE DB Source.Outputs[OLE DB Source Output].Columns[Kwartal]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\Czas\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Rok]"
+                          cachedDataType="numeric"
+                          cachedName="Rok"
+                          cachedPrecision="4"
+                          externalMetadataColumnId="Package\Sequence Container\Czas\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Rok]"
+                          lineageId="Package\Sequence Container\Czas\OLE DB Source.Outputs[OLE DB Source Output].Columns[Rok]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Czas\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[IdCzasu]"
+                          dataType="i4"
+                          name="IdCzasu" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Czas\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Data]"
+                          dataType="dbDate"
+                          name="Data" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Czas\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Dzien]"
+                          dataType="numeric"
+                          name="Dzien"
+                          precision="2" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Czas\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Miesiac]"
+                          dataType="numeric"
+                          name="Miesiac"
+                          precision="2" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Czas\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Kwartal]"
+                          dataType="numeric"
+                          name="Kwartal"
+                          precision="1" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Czas\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Rok]"
+                          dataType="numeric"
+                          name="Rok"
+                          precision="4" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Sequence Container\Czas\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="OLE DB Destination Error Output"
+                      synchronousInputId="Package\Sequence Container\Czas\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Sequence Container\Czas\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\Czas\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Czas\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\Czas\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Sequence Container\Czas\OLE DB Source"
+                  componentClassID="Microsoft.OLEDBSource"
+                  contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+                  description="OLE DB Source"
+                  name="OLE DB Source"
+                  usesDispositions="true"
+                  version="7">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">[dbo].[CzasSt]</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                    <property
+                      dataType="System.String"
+                      description="The variable that contains the SQL command to be executed."
+                      name="SqlCommandVariable"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1250</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">0</property>
+                    <property
+                      dataType="System.String"
+                      description="The mappings between the parameters in the SQL command and variables."
+                      name="ParameterMapping"></property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Sequence Container\Czas\OLE DB Source.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[localhost\sqlexpress.SportTrackingStage]"
+                      connectionManagerRefId="Package.ConnectionManagers[localhost\sqlexpress.SportTrackingStage]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <outputs>
+                    <output
+                      refId="Package\Sequence Container\Czas\OLE DB Source.Outputs[OLE DB Source Output]"
+                      name="OLE DB Source Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Sequence Container\Czas\OLE DB Source.Outputs[OLE DB Source Output].Columns[Data]"
+                          dataType="dbDate"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\Czas\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Data]"
+                          lineageId="Package\Sequence Container\Czas\OLE DB Source.Outputs[OLE DB Source Output].Columns[Data]"
+                          name="Data"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Czas\OLE DB Source.Outputs[OLE DB Source Output].Columns[Dzien]"
+                          dataType="numeric"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\Czas\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Dzien]"
+                          lineageId="Package\Sequence Container\Czas\OLE DB Source.Outputs[OLE DB Source Output].Columns[Dzien]"
+                          name="Dzien"
+                          precision="2"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Czas\OLE DB Source.Outputs[OLE DB Source Output].Columns[Miesiac]"
+                          dataType="numeric"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\Czas\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Miesiac]"
+                          lineageId="Package\Sequence Container\Czas\OLE DB Source.Outputs[OLE DB Source Output].Columns[Miesiac]"
+                          name="Miesiac"
+                          precision="2"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Czas\OLE DB Source.Outputs[OLE DB Source Output].Columns[Kwartal]"
+                          dataType="numeric"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\Czas\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Kwartal]"
+                          lineageId="Package\Sequence Container\Czas\OLE DB Source.Outputs[OLE DB Source Output].Columns[Kwartal]"
+                          name="Kwartal"
+                          precision="1"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Czas\OLE DB Source.Outputs[OLE DB Source Output].Columns[Rok]"
+                          dataType="numeric"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\Czas\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Rok]"
+                          lineageId="Package\Sequence Container\Czas\OLE DB Source.Outputs[OLE DB Source Output].Columns[Rok]"
+                          name="Rok"
+                          precision="4"
+                          truncationRowDisposition="FailComponent" />
+                      </outputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Czas\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Data]"
+                          dataType="dbDate"
+                          name="Data" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Czas\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Dzien]"
+                          dataType="numeric"
+                          name="Dzien"
+                          precision="2" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Czas\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Miesiac]"
+                          dataType="numeric"
+                          name="Miesiac"
+                          precision="2" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Czas\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Kwartal]"
+                          dataType="numeric"
+                          name="Kwartal"
+                          precision="1" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Czas\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Rok]"
+                          dataType="numeric"
+                          name="Rok"
+                          precision="4" />
+                      </externalMetadataColumns>
+                    </output>
+                    <output
+                      refId="Package\Sequence Container\Czas\OLE DB Source.Outputs[OLE DB Source Error Output]"
+                      isErrorOut="true"
+                      name="OLE DB Source Error Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Sequence Container\Czas\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Data]"
+                          dataType="dbDate"
+                          lineageId="Package\Sequence Container\Czas\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Data]"
+                          name="Data" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Czas\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Dzien]"
+                          dataType="numeric"
+                          lineageId="Package\Sequence Container\Czas\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Dzien]"
+                          name="Dzien"
+                          precision="2" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Czas\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Miesiac]"
+                          dataType="numeric"
+                          lineageId="Package\Sequence Container\Czas\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Miesiac]"
+                          name="Miesiac"
+                          precision="2" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Czas\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Kwartal]"
+                          dataType="numeric"
+                          lineageId="Package\Sequence Container\Czas\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Kwartal]"
+                          name="Kwartal"
+                          precision="1" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Czas\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Rok]"
+                          dataType="numeric"
+                          lineageId="Package\Sequence Container\Czas\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Rok]"
+                          name="Rok"
+                          precision="4" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Czas\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\Czas\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Czas\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\Czas\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+              </components>
+              <paths>
+                <path
+                  refId="Package\Sequence Container\Czas.Paths[OLE DB Source Output]"
+                  endId="Package\Sequence Container\Czas\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  name="OLE DB Source Output"
+                  startId="Package\Sequence Container\Czas\OLE DB Source.Outputs[OLE DB Source Output]" />
+              </paths>
+            </pipeline>
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Sequence Container\Obszar"
+          DTS:CreationName="Microsoft.Pipeline"
+          DTS:Description="Data Flow Task"
+          DTS:DTSID="{53096856-8D31-486B-95C1-B2694798606A}"
+          DTS:ExecutableType="Microsoft.Pipeline"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Obszar"
+          DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <pipeline
+              version="1">
+              <components>
+                <component
+                  refId="Package\Sequence Container\Obszar\OLE DB Destination"
+                  componentClassID="Microsoft.OLEDBDestination"
+                  contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+                  description="OLE DB Destination"
+                  name="OLE DB Destination"
+                  usesDispositions="true"
+                  version="4">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">[dbo].[Obszar]</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1250</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">3</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepIdentity">false</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                      name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                      name="FastLoadMaxInsertCommitSize">2147483647</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Sequence Container\Obszar\OLE DB Destination.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[localhost\sqlexpress.SportTrackingHur]"
+                      connectionManagerRefId="Package.ConnectionManagers[localhost\sqlexpress.SportTrackingHur]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\Sequence Container\Obszar\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                      errorOrTruncationOperation="Insert"
+                      errorRowDisposition="FailComponent"
+                      hasSideEffects="true"
+                      name="OLE DB Destination Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Sequence Container\Obszar\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[IdObszaruT]"
+                          cachedDataType="i4"
+                          cachedName="IdObszaruT"
+                          externalMetadataColumnId="Package\Sequence Container\Obszar\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[IdObszaruT]"
+                          lineageId="Package\Sequence Container\Obszar\OLE DB Source.Outputs[OLE DB Source Output].Columns[IdObszaruT]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\Obszar\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[NazwaObszaru]"
+                          cachedCodepage="1250"
+                          cachedDataType="str"
+                          cachedLength="255"
+                          cachedName="NazwaObszaru"
+                          externalMetadataColumnId="Package\Sequence Container\Obszar\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NazwaObszaru]"
+                          lineageId="Package\Sequence Container\Obszar\OLE DB Source.Outputs[OLE DB Source Output].Columns[NazwaObszaru]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Obszar\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[IdObszaru]"
+                          dataType="i4"
+                          name="IdObszaru" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Obszar\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[IdObszaruT]"
+                          dataType="i4"
+                          name="IdObszaruT" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Obszar\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NazwaObszaru]"
+                          codePage="1250"
+                          dataType="str"
+                          length="255"
+                          name="NazwaObszaru" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Sequence Container\Obszar\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="OLE DB Destination Error Output"
+                      synchronousInputId="Package\Sequence Container\Obszar\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Sequence Container\Obszar\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\Obszar\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Obszar\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\Obszar\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Sequence Container\Obszar\OLE DB Source"
+                  componentClassID="Microsoft.OLEDBSource"
+                  contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+                  description="OLE DB Source"
+                  name="OLE DB Source"
+                  usesDispositions="true"
+                  version="7">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">[dbo].[ObszarSt]</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                    <property
+                      dataType="System.String"
+                      description="The variable that contains the SQL command to be executed."
+                      name="SqlCommandVariable"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1250</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">0</property>
+                    <property
+                      dataType="System.String"
+                      description="The mappings between the parameters in the SQL command and variables."
+                      name="ParameterMapping"></property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Sequence Container\Obszar\OLE DB Source.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[localhost\sqlexpress.SportTrackingStage]"
+                      connectionManagerRefId="Package.ConnectionManagers[localhost\sqlexpress.SportTrackingStage]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <outputs>
+                    <output
+                      refId="Package\Sequence Container\Obszar\OLE DB Source.Outputs[OLE DB Source Output]"
+                      name="OLE DB Source Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Sequence Container\Obszar\OLE DB Source.Outputs[OLE DB Source Output].Columns[IdObszaruT]"
+                          dataType="i4"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\Obszar\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[IdObszaruT]"
+                          lineageId="Package\Sequence Container\Obszar\OLE DB Source.Outputs[OLE DB Source Output].Columns[IdObszaruT]"
+                          name="IdObszaruT"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Obszar\OLE DB Source.Outputs[OLE DB Source Output].Columns[NazwaObszaru]"
+                          codePage="1250"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\Obszar\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[NazwaObszaru]"
+                          length="255"
+                          lineageId="Package\Sequence Container\Obszar\OLE DB Source.Outputs[OLE DB Source Output].Columns[NazwaObszaru]"
+                          name="NazwaObszaru"
+                          truncationRowDisposition="FailComponent" />
+                      </outputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Obszar\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[IdObszaruT]"
+                          dataType="i4"
+                          name="IdObszaruT" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Obszar\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[NazwaObszaru]"
+                          codePage="1250"
+                          dataType="str"
+                          length="255"
+                          name="NazwaObszaru" />
+                      </externalMetadataColumns>
+                    </output>
+                    <output
+                      refId="Package\Sequence Container\Obszar\OLE DB Source.Outputs[OLE DB Source Error Output]"
+                      isErrorOut="true"
+                      name="OLE DB Source Error Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Sequence Container\Obszar\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[IdObszaruT]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\Obszar\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[IdObszaruT]"
+                          name="IdObszaruT" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Obszar\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[NazwaObszaru]"
+                          codePage="1250"
+                          dataType="str"
+                          length="255"
+                          lineageId="Package\Sequence Container\Obszar\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[NazwaObszaru]"
+                          name="NazwaObszaru" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Obszar\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\Obszar\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Obszar\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\Obszar\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+              </components>
+              <paths>
+                <path
+                  refId="Package\Sequence Container\Obszar.Paths[OLE DB Source Output]"
+                  endId="Package\Sequence Container\Obszar\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  name="OLE DB Source Output"
+                  startId="Package\Sequence Container\Obszar\OLE DB Source.Outputs[OLE DB Source Output]" />
+              </paths>
+            </pipeline>
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Sequence Container\Uzytkownik"
+          DTS:CreationName="Microsoft.Pipeline"
+          DTS:Description="Data Flow Task"
+          DTS:DTSID="{A3CE8C1C-5AEF-4F85-8BAE-ABDB36A10CA7}"
+          DTS:ExecutableType="Microsoft.Pipeline"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Uzytkownik"
+          DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <pipeline
+              version="1">
+              <components>
+                <component
+                  refId="Package\Sequence Container\Uzytkownik\OLE DB Destination"
+                  componentClassID="Microsoft.OLEDBDestination"
+                  contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+                  description="OLE DB Destination"
+                  name="OLE DB Destination"
+                  usesDispositions="true"
+                  version="4">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">[dbo].[Uzytkownik]</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1250</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">3</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepIdentity">false</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                      name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                      name="FastLoadMaxInsertCommitSize">2147483647</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Sequence Container\Uzytkownik\OLE DB Destination.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[localhost\sqlexpress.SportTrackingHur]"
+                      connectionManagerRefId="Package.ConnectionManagers[localhost\sqlexpress.SportTrackingHur]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\Sequence Container\Uzytkownik\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                      errorOrTruncationOperation="Insert"
+                      errorRowDisposition="FailComponent"
+                      hasSideEffects="true"
+                      name="OLE DB Destination Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Sequence Container\Uzytkownik\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[IdUzytkownikT]"
+                          cachedDataType="i4"
+                          cachedName="IdUzytkownikT"
+                          externalMetadataColumnId="Package\Sequence Container\Uzytkownik\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[IdUzytkownikT]"
+                          lineageId="Package\Sequence Container\Uzytkownik\OLE DB Source.Outputs[OLE DB Source Output].Columns[IdUzytkownikT]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\Uzytkownik\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Imie]"
+                          cachedCodepage="1250"
+                          cachedDataType="str"
+                          cachedLength="255"
+                          cachedName="Imie"
+                          externalMetadataColumnId="Package\Sequence Container\Uzytkownik\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Imie]"
+                          lineageId="Package\Sequence Container\Uzytkownik\OLE DB Source.Outputs[OLE DB Source Output].Columns[Imie]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\Uzytkownik\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Nazwisko]"
+                          cachedCodepage="1250"
+                          cachedDataType="str"
+                          cachedLength="255"
+                          cachedName="Nazwisko"
+                          externalMetadataColumnId="Package\Sequence Container\Uzytkownik\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Nazwisko]"
+                          lineageId="Package\Sequence Container\Uzytkownik\OLE DB Source.Outputs[OLE DB Source Output].Columns[Nazwisko]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\Uzytkownik\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Plec]"
+                          cachedCodepage="1250"
+                          cachedDataType="str"
+                          cachedLength="20"
+                          cachedName="Plec"
+                          externalMetadataColumnId="Package\Sequence Container\Uzytkownik\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Plec]"
+                          lineageId="Package\Sequence Container\Uzytkownik\OLE DB Source.Outputs[OLE DB Source Output].Columns[Plec]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\Uzytkownik\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DataUrodzenia]"
+                          cachedDataType="dbTimeStamp"
+                          cachedName="DataUrodzenia"
+                          externalMetadataColumnId="Package\Sequence Container\Uzytkownik\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DataUrodzenia]"
+                          lineageId="Package\Sequence Container\Uzytkownik\OLE DB Source.Outputs[OLE DB Source Output].Columns[DataUrodzenia]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\Uzytkownik\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DataRejestracji]"
+                          cachedDataType="dbTimeStamp"
+                          cachedName="DataRejestracji"
+                          externalMetadataColumnId="Package\Sequence Container\Uzytkownik\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DataRejestracji]"
+                          lineageId="Package\Sequence Container\Uzytkownik\OLE DB Source.Outputs[OLE DB Source Output].Columns[DataRejestracji]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Uzytkownik\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[IdUzytkownik]"
+                          dataType="i4"
+                          name="IdUzytkownik" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Uzytkownik\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[IdUzytkownikT]"
+                          dataType="i4"
+                          name="IdUzytkownikT" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Uzytkownik\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Imie]"
+                          codePage="1250"
+                          dataType="str"
+                          length="255"
+                          name="Imie" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Uzytkownik\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Nazwisko]"
+                          codePage="1250"
+                          dataType="str"
+                          length="255"
+                          name="Nazwisko" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Uzytkownik\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Plec]"
+                          codePage="1250"
+                          dataType="str"
+                          length="20"
+                          name="Plec" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Uzytkownik\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DataUrodzenia]"
+                          dataType="dbTimeStamp"
+                          name="DataUrodzenia" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Uzytkownik\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DataRejestracji]"
+                          dataType="dbTimeStamp"
+                          name="DataRejestracji" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Sequence Container\Uzytkownik\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="OLE DB Destination Error Output"
+                      synchronousInputId="Package\Sequence Container\Uzytkownik\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Sequence Container\Uzytkownik\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\Uzytkownik\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Uzytkownik\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\Uzytkownik\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Sequence Container\Uzytkownik\OLE DB Source"
+                  componentClassID="Microsoft.OLEDBSource"
+                  contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+                  description="OLE DB Source"
+                  name="OLE DB Source"
+                  usesDispositions="true"
+                  version="7">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">[dbo].[UzytkownikSt]</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                    <property
+                      dataType="System.String"
+                      description="The variable that contains the SQL command to be executed."
+                      name="SqlCommandVariable"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1250</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">0</property>
+                    <property
+                      dataType="System.String"
+                      description="The mappings between the parameters in the SQL command and variables."
+                      name="ParameterMapping"></property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Sequence Container\Uzytkownik\OLE DB Source.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[localhost\sqlexpress.SportTrackingStage]"
+                      connectionManagerRefId="Package.ConnectionManagers[localhost\sqlexpress.SportTrackingStage]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <outputs>
+                    <output
+                      refId="Package\Sequence Container\Uzytkownik\OLE DB Source.Outputs[OLE DB Source Output]"
+                      name="OLE DB Source Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Sequence Container\Uzytkownik\OLE DB Source.Outputs[OLE DB Source Output].Columns[IdUzytkownikT]"
+                          dataType="i4"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\Uzytkownik\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[IdUzytkownikT]"
+                          lineageId="Package\Sequence Container\Uzytkownik\OLE DB Source.Outputs[OLE DB Source Output].Columns[IdUzytkownikT]"
+                          name="IdUzytkownikT"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Uzytkownik\OLE DB Source.Outputs[OLE DB Source Output].Columns[Imie]"
+                          codePage="1250"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\Uzytkownik\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Imie]"
+                          length="255"
+                          lineageId="Package\Sequence Container\Uzytkownik\OLE DB Source.Outputs[OLE DB Source Output].Columns[Imie]"
+                          name="Imie"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Uzytkownik\OLE DB Source.Outputs[OLE DB Source Output].Columns[Nazwisko]"
+                          codePage="1250"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\Uzytkownik\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Nazwisko]"
+                          length="255"
+                          lineageId="Package\Sequence Container\Uzytkownik\OLE DB Source.Outputs[OLE DB Source Output].Columns[Nazwisko]"
+                          name="Nazwisko"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Uzytkownik\OLE DB Source.Outputs[OLE DB Source Output].Columns[Plec]"
+                          codePage="1250"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\Uzytkownik\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Plec]"
+                          length="20"
+                          lineageId="Package\Sequence Container\Uzytkownik\OLE DB Source.Outputs[OLE DB Source Output].Columns[Plec]"
+                          name="Plec"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Uzytkownik\OLE DB Source.Outputs[OLE DB Source Output].Columns[DataUrodzenia]"
+                          dataType="dbTimeStamp"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\Uzytkownik\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[DataUrodzenia]"
+                          lineageId="Package\Sequence Container\Uzytkownik\OLE DB Source.Outputs[OLE DB Source Output].Columns[DataUrodzenia]"
+                          name="DataUrodzenia"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Uzytkownik\OLE DB Source.Outputs[OLE DB Source Output].Columns[DataRejestracji]"
+                          dataType="dbTimeStamp"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\Uzytkownik\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[DataRejestracji]"
+                          lineageId="Package\Sequence Container\Uzytkownik\OLE DB Source.Outputs[OLE DB Source Output].Columns[DataRejestracji]"
+                          name="DataRejestracji"
+                          truncationRowDisposition="FailComponent" />
+                      </outputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Uzytkownik\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[IdUzytkownikT]"
+                          dataType="i4"
+                          name="IdUzytkownikT" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Uzytkownik\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Imie]"
+                          codePage="1250"
+                          dataType="str"
+                          length="255"
+                          name="Imie" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Uzytkownik\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Nazwisko]"
+                          codePage="1250"
+                          dataType="str"
+                          length="255"
+                          name="Nazwisko" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Uzytkownik\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Plec]"
+                          codePage="1250"
+                          dataType="str"
+                          length="20"
+                          name="Plec" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Uzytkownik\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[DataUrodzenia]"
+                          dataType="dbTimeStamp"
+                          name="DataUrodzenia" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\Uzytkownik\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[DataRejestracji]"
+                          dataType="dbTimeStamp"
+                          name="DataRejestracji" />
+                      </externalMetadataColumns>
+                    </output>
+                    <output
+                      refId="Package\Sequence Container\Uzytkownik\OLE DB Source.Outputs[OLE DB Source Error Output]"
+                      isErrorOut="true"
+                      name="OLE DB Source Error Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Sequence Container\Uzytkownik\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[IdUzytkownikT]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\Uzytkownik\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[IdUzytkownikT]"
+                          name="IdUzytkownikT" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Uzytkownik\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Imie]"
+                          codePage="1250"
+                          dataType="str"
+                          length="255"
+                          lineageId="Package\Sequence Container\Uzytkownik\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Imie]"
+                          name="Imie" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Uzytkownik\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Nazwisko]"
+                          codePage="1250"
+                          dataType="str"
+                          length="255"
+                          lineageId="Package\Sequence Container\Uzytkownik\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Nazwisko]"
+                          name="Nazwisko" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Uzytkownik\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Plec]"
+                          codePage="1250"
+                          dataType="str"
+                          length="20"
+                          lineageId="Package\Sequence Container\Uzytkownik\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Plec]"
+                          name="Plec" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Uzytkownik\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[DataUrodzenia]"
+                          dataType="dbTimeStamp"
+                          lineageId="Package\Sequence Container\Uzytkownik\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[DataUrodzenia]"
+                          name="DataUrodzenia" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Uzytkownik\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[DataRejestracji]"
+                          dataType="dbTimeStamp"
+                          lineageId="Package\Sequence Container\Uzytkownik\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[DataRejestracji]"
+                          name="DataRejestracji" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Uzytkownik\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\Uzytkownik\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Sequence Container\Uzytkownik\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\Uzytkownik\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+              </components>
+              <paths>
+                <path
+                  refId="Package\Sequence Container\Uzytkownik.Paths[OLE DB Source Output]"
+                  endId="Package\Sequence Container\Uzytkownik\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  name="OLE DB Source Output"
+                  startId="Package\Sequence Container\Uzytkownik\OLE DB Source.Outputs[OLE DB Source Output]" />
+              </paths>
+            </pipeline>
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{3C8C073F-9407-4B1F-B409-B7BDFCD58120}"
+      DTS:From="Package\Sequence Container"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\Fakty" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{2E2D07AE-7BAF-406C-82AA-9A1530431947}"
+      DTS:From="Package\Execute SQL Task"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 1"
+      DTS:To="Package\Sequence Container" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="207,42"
+          Id="Package\Execute SQL Task"
+          TopLeft="187,22" />
+        <NodeLayout
+          Size="133,42"
+          Id="Package\Fakty"
+          TopLeft="268,469" />
+        <NodeLayout
+          Size="134,42"
+          Id="Package\Sequence Container\Czas"
+          TopLeft="20,17" />
+        <NodeLayout
+          Size="113,42"
+          Id="Package\Sequence Container\Obszar"
+          TopLeft="29,153" />
+        <NodeLayout
+          Size="127,42"
+          Id="Package\Sequence Container\Cwiczenie"
+          TopLeft="195,19" />
+        <NodeLayout
+          Size="134,42"
+          Id="Package\Sequence Container\Uzytkownik"
+          TopLeft="200,162" />
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="393,274"
+          Size="393,317"
+          Id="Package\Sequence Container"
+          TopLeft="98,107" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="294.5,424">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="40,45"
+              Start="0,0"
+              End="40,37.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,18.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,18.5"
+                    Point2="0,22.5"
+                    Point3="4,22.5" />
+                  <mssgle:LineSegment
+                    End="36,22.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="36,22.5"
+                    Point2="40,22.5"
+                    Point3="40,26.5" />
+                  <mssgle:LineSegment
+                    End="40,37.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 1]"
+          TopLeft="292.5,64">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,43"
+              Start="0,0"
+              End="0,35.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,35.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Fakty">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="150,42"
+          Id="Package\Fakty\OLE DB Source"
+          TopLeft="199,60" />
+        <NodeLayout
+          Size="175,42"
+          Id="Package\Fakty\Lookup 1"
+          TopLeft="265,308" />
+        <NodeLayout
+          Size="145,42"
+          Id="Package\Fakty\Lookup 3"
+          TopLeft="538,420" />
+        <NodeLayout
+          Size="173,42"
+          Id="Package\Fakty\Lookup"
+          TopLeft="242,198" />
+        <NodeLayout
+          Size="149,42"
+          Id="Package\Fakty\Lookup 2"
+          TopLeft="276,413" />
+        <NodeLayout
+          Size="171,42"
+          Id="Package\Fakty\OLE DB Destination"
+          TopLeft="778,316" />
+        <EdgeLayout
+          Id="Package\Fakty.Paths[OLE DB Source Output]"
+          TopLeft="274,102">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="54.5,96"
+              Start="0,0"
+              End="54.5,88.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,44" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,44"
+                    Point2="0,48"
+                    Point3="4,48" />
+                  <mssgle:LineSegment
+                    End="50.5,48" />
+                  <mssgle:CubicBezierSegment
+                    Point1="50.5,48"
+                    Point2="54.5,48"
+                    Point3="54.5,52" />
+                  <mssgle:LineSegment
+                    End="54.5,88.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Fakty.Paths[Lookup Match Output3]"
+          TopLeft="610.5,420">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="253,-62"
+              Start="0,0"
+              End="253,-54.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,-27" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,-27"
+                    Point2="0,-31"
+                    Point3="4,-31" />
+                  <mssgle:LineSegment
+                    End="249,-31" />
+                  <mssgle:CubicBezierSegment
+                    Point1="249,-31"
+                    Point2="253,-31"
+                    Point3="253,-35" />
+                  <mssgle:LineSegment
+                    End="253,-54.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="78.30861328125,-26,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Fakty.Paths[Lookup Match Output2]"
+          TopLeft="425,437.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="113,0"
+              Start="0,0"
+              End="105.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="105.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-4.3100390625,5,114.120078125,16"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Fakty.Paths[Lookup Match Output1]"
+          TopLeft="351.5,350">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,63"
+              Start="0,0"
+              End="0,55.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,55.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-48.19138671875,21.9453125,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Fakty.Paths[Lookup Match Output]"
+          TopLeft="328.5,240">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="24,68"
+              Start="0,0"
+              End="24,60.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,30" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,30"
+                    Point2="0,34"
+                    Point3="4,34" />
+                  <mssgle:LineSegment
+                    End="20,34" />
+                  <mssgle:CubicBezierSegment
+                    Point1="20,34"
+                    Point2="24,34"
+                    Point3="24,38" />
+                  <mssgle:LineSegment
+                    End="24,60.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-36.19138671875,39,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Fakty\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Fakty\Lookup 1">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:boolean">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[Cwiczenie]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:int">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Fakty\Lookup 3">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:string">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[NB_HUR].[RodzajOperacji]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:string">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Fakty\Lookup">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:boolean">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[Czas]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:int">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Fakty\Lookup 2">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:boolean">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[Obszar]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:int">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Fakty\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Sequence Container\Czas">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="150,42"
+          Id="Package\Sequence Container\Czas\OLE DB Source"
+          TopLeft="161,73" />
+        <NodeLayout
+          Size="171,42"
+          Id="Package\Sequence Container\Czas\OLE DB Destination"
+          TopLeft="164,204" />
+        <EdgeLayout
+          Id="Package\Sequence Container\Czas.Paths[OLE DB Source Output]"
+          TopLeft="236,115">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="13.5,89"
+              Start="0,0"
+              End="13.5,81.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,40.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,40.5"
+                    Point2="0,44.5"
+                    Point3="4,44.5" />
+                  <mssgle:LineSegment
+                    End="9.5,44.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="9.5,44.5"
+                    Point2="13.5,44.5"
+                    Point3="13.5,48.5" />
+                  <mssgle:LineSegment
+                    End="13.5,81.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container\Czas\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container\Czas\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Sequence Container\Obszar">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="150,42"
+          Id="Package\Sequence Container\Obszar\OLE DB Source"
+          TopLeft="142,63" />
+        <NodeLayout
+          Size="171,42"
+          Id="Package\Sequence Container\Obszar\OLE DB Destination"
+          TopLeft="213,228" />
+        <EdgeLayout
+          Id="Package\Sequence Container\Obszar.Paths[OLE DB Source Output]"
+          TopLeft="217,105">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="81.5,123"
+              Start="0,0"
+              End="81.5,115.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,57.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,57.5"
+                    Point2="0,61.5"
+                    Point3="4,61.5" />
+                  <mssgle:LineSegment
+                    End="77.5,61.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="77.5,61.5"
+                    Point2="81.5,61.5"
+                    Point3="81.5,65.5" />
+                  <mssgle:LineSegment
+                    End="81.5,115.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container\Obszar\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container\Obszar\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Sequence Container\Cwiczenie">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="152,42"
+          Id="Package\Sequence Container\Cwiczenie\OLE DB Source"
+          TopLeft="127,108" />
+        <NodeLayout
+          Size="171,42"
+          Id="Package\Sequence Container\Cwiczenie\OLE DB Destination"
+          TopLeft="140,251" />
+        <EdgeLayout
+          Id="Package\Sequence Container\Cwiczenie.Paths[OLE DB Source Output]"
+          TopLeft="203,150">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="22.5,101"
+              Start="0,0"
+              End="22.5,93.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,46.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,46.5"
+                    Point2="0,50.5"
+                    Point3="4,50.5" />
+                  <mssgle:LineSegment
+                    End="18.5,50.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="18.5,50.5"
+                    Point2="22.5,50.5"
+                    Point3="22.5,54.5" />
+                  <mssgle:LineSegment
+                    End="22.5,93.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container\Cwiczenie\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container\Cwiczenie\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Sequence Container\Uzytkownik">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="150,42"
+          Id="Package\Sequence Container\Uzytkownik\OLE DB Source"
+          TopLeft="163,88" />
+        <NodeLayout
+          Size="171,42"
+          Id="Package\Sequence Container\Uzytkownik\OLE DB Destination"
+          TopLeft="203,281" />
+        <EdgeLayout
+          Id="Package\Sequence Container\Uzytkownik.Paths[OLE DB Source Output]"
+          TopLeft="238,130">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="50.5,151"
+              Start="0,0"
+              End="50.5,143.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,71.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,71.5"
+                    Point2="0,75.5"
+                    Point3="4,75.5" />
+                  <mssgle:LineSegment
+                    End="46.5,75.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="46.5,75.5"
+                    Point2="50.5,75.5"
+                    Point3="50.5,79.5" />
+                  <mssgle:LineSegment
+                    End="50.5,143.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container\Uzytkownik\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container\Uzytkownik\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

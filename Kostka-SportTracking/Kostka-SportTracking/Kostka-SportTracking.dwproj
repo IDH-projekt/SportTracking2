@@ -6,10 +6,34 @@
     <Name>Kostka-SportTracking.database</Name>
     <FullPath>Kostka-SportTracking.database</FullPath>
   </Database>
+  <Cubes>
+    <ProjectItem>
+      <Name>Sport Tracking Hur.cube</Name>
+      <FullPath>Sport Tracking Hur.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>Sport Tracking Hur.partitions</Name>
+          <FullPath>Sport Tracking Hur.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+  </Cubes>
   <Dimensions>
     <ProjectItem>
       <Name>Cwiczenie.dim</Name>
       <FullPath>Cwiczenie.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Obszar.dim</Name>
+      <FullPath>Obszar.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Czas.dim</Name>
+      <FullPath>Czas.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Uzytkownik.dim</Name>
+      <FullPath>Uzytkownik.dim</FullPath>
     </ProjectItem>
   </Dimensions>
   <DataSources>
